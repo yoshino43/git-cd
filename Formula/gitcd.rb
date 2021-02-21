@@ -1,8 +1,8 @@
 class Gitcd < Formula
-  desc "Git checkout コマンド"
+  desc "Git checkout command"
   homepage ""
-  url "https://github.com/yoshino43/homebrew-git-cd/releases/download/0.0.1/git-cd"
-  sha256 "3f02e26ed3ea5ec0716501648ec288e5aa2b0eb825cf5b18c8b9bb662688bc73"
+  url "https://github.com/yoshino43/homebrew-git-cd/releases/download/0.0.2/git-cd"
+  sha256 "c7b5b2082c648f90e4a5af446aa93ac4dc727f984fbddc91719d3f7ce76983f4"
   license ""
 
 
