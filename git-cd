@@ -1,5 +1,4 @@
 #!/bin/sh
-    branches=$(git branch -vv) &&
-      branch=$(echo "$branches" |sed "s/* //" | awk '{print $1}' |fzf --preview 'git log --graph --date=short --pretty="format:%C(yellow)%h %C(cyan)%ad %C(green)%an%Creset%x09%s %C(red)%d%Creset" --color=always {} ') &&
-        git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-
+branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | sed "s/* //" | awk '{print $1}' | fzf --preview 'git log --graph --date=short --pretty="format:%C(yellow)%h %C(cyan)%ad %C(green)%an%Creset%x09%s %C(red)%d%Creset" --color=always {} ') &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
